@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  margin: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  justify-content: center;
+  background-color: #272b33;
+  z-index: 100;
+  /* background-color: #242424; */
+}
+
+.header ul {
+  list-style: none;
+}
+
+.list {
+  display: flex;
+  gap: 1rem;
+}
+
+.list a {
+  text-decoration: none;
+  color: var(--color-primary-400);
+}
+
+.list a:hover,
+.list a.active {
+  color: var(--color-primary-900);
+}

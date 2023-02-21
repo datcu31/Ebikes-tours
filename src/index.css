@@ -1,0 +1,58 @@
+/* * {
+  box-sizing: border-box;
+} */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+:root {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 900, 700, 400, 300, 100;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #222429;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --color-gray-100: #f4f3f1;
+  --color-gray-200: #d6ddee;
+  --color-gray-300: #bec6da;
+  --color-gray-400: #a4adc2;
+  --color-gray-500: #81899c;
+  --color-gray-600: #5f6574;
+  --color-gray-700: #4d515e;
+  --color-gray-800: #34373f;
+  --color-gray-900: #222429;
+
+  --color-primary-100: #fcf3e1;
+  --color-primary-200: #c1f8f8;
+  --color-primary-300: #8deeee;
+  --color-primary-400: #73ebeb;
+  --color-primary-500: #58dddd;
+  --color-primary-600: #44cccc;
+  --color-primary-700: #2dc0c0;
+  --color-primary-800: #1bb1b1;
+  --color-primary-900: #03A6A6;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
