@@ -1,51 +1,59 @@
 .form {
-    max-width: 70%;
-    margin: 2rem auto;
-  }
-  
-  .form label,
-  .form input,
-  .form textarea {
-    display: block;
-    width: 100%;
-  }
-  
-  .form input,
-  .form textarea {
-    font: inherit;
-    padding: 0.25rem;
-  }
+  width: 95%;
+  margin: 2rem auto;
+  text-align: center;
+}
 
-  .invalid label,
-  .invalid p {
-    color:  var(--color-primary-900);
+.form label,
+.form input,
+.form textarea {
+  display: block;
+  width: 100%;
+  font: inherit;
+  padding: 0.25rem;
+}
+
+.form input,
+.form textarea {
+  margin: 0.5rem;
+}
+
+.invalid label,
+.invalid p {
+  color: var(--color-primary-900);
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.actions button {
+  font: inherit;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  background-color: var(--color-gray-300);
+  color: var(--color-gray-800);
+  border: none;
+}
+
+.actions button[type="button"] {
+  background-color: transparent;
+  color: var(--color-gray-300);
+}
+
+.actions button:hover {
+  background-color: var(--color-primary-300);
+}
+
+.actions button[type="button"]:hover {
+  background-color: var(--color-gray-800);
+}
+
+@media (min-width: 40rem) {
+  .form {
+    width: 40rem;
   }
-  
-  .actions {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-  }
-  
-  .actions button {
-    font: inherit;
-    cursor: pointer;
-    padding: 0.5rem 1.5rem;
-    border-radius: 4px;
-    background-color: var(--color-gray-300);
-    color: var(--color-gray-800);
-    border: none;
-  }
-  
-  .actions button[type='button'] {
-    background-color: transparent;
-    color: var(--color-gray-300);
-  }
-  
-  .actions button:hover {
-    background-color: var(--color-primary-300);
-  }
-  
-  .actions button[type='button']:hover {
-    background-color: var(--color-gray-800);
-  }
+}

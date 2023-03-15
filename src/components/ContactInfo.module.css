@@ -1,18 +1,16 @@
 .members {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-top: 5px;
   margin: 1rem auto;
-  max-width: 40%;
 }
 
 .members h1 {
   margin-bottom: 0;
   padding-bottom: 25px;
   border-bottom: 2px solid white;
-}
-
-.list {
-  display: flex;
-  flex-direction: column;
 }
 
 .person {
@@ -26,4 +24,11 @@
 .loading {
   text-align: center;
   color: white;
+}
+
+@media(min-width: 55rem) {
+  .list {
+    display: flex;
+    flex-direction: row;
+  }
 }

@@ -1,6 +1,12 @@
-/* * {
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
   box-sizing: border-box;
-} */
+}
+
+html {
+  height: 100%;
+}
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -44,11 +50,11 @@
   --color-primary-600: #44cccc;
   --color-primary-700: #2dc0c0;
   --color-primary-800: #1bb1b1;
-  --color-primary-900: #03A6A6;
+  --color-primary-900: #03a6a6;
 }
 
 body {
-  margin: 0;
+  margin-top: 5rem;
 }
 
 ul {

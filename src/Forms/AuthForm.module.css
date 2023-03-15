@@ -1,5 +1,5 @@
 .form {
-  max-width: 40%;
+  width: 95%;
   margin: 2rem auto;
   text-align: center;
 }
@@ -8,17 +8,14 @@
 .form input {
   display: block;
   width: 100%;
-  padding: 0.5rem;
-}
-
-.form input {
-  font: inherit;
   padding: 0.25rem;
+  margin: 1rem auto;
+  font: inherit;
 }
 
 .actions {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   justify-content: center;
   margin-top: 1rem;
 }
@@ -26,7 +23,7 @@
 .actions button {
   font: inherit;
   cursor: pointer;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 4px;
   background-color: var(--color-gray-300);
   color: var(--color-gray-800);
@@ -44,4 +41,10 @@
 
 .actions button[type="button"]:hover {
   background-color: var(--color-gray-800);
+}
+
+@media (min-width: 40rem) {
+  .form {
+    width: 40rem;
+  }
 }

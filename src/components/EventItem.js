@@ -9,12 +9,12 @@ const EventItem = ({ event }) => {
     const isLoggedIn = authCtx.isLoggedIn;
 
     return (
-        <article className={classes.event}>
-            <div>
-                <h1>- {event.responseData.title} -</h1>
-                <img src={event.responseData.img} alt="img" />
+        <div className={classes.event}>
+            <div className={classes.container_top}>
+                <h1 className={classes.title}>{event.responseData.title}</h1>
+                <img className={classes.pic} src={event.responseData.img} alt="img" />
             </div>
-            <div className={classes.container}>
+            <div className={classes.container_bottom}>
                 {isLoggedIn && (
                 <NavLink to={`/form/${event.id}`}>Book Now!</NavLink>
                 )}
@@ -26,7 +26,7 @@ const EventItem = ({ event }) => {
                 )}
                 <p>{event.responseData.description}</p>
             </div>
-        </article>
+        </div>
     );
 };
 

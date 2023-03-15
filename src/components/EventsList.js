@@ -23,7 +23,7 @@ const EventsList = ({events}) => {
             <ul className={classes.list}>
                 {events.map((event) => (
                     <li key={event.id} className={classes.item}>
-                        <Link to={`/${event.id}`}>
+                        <Link to={`/${event.id}`} className={classes.link_container}>
                             <div className={classes.pic}><img src={event.img} alt="img" /></div>
                             <div className={classes.content}>
                                 <h2>{event.title}</h2>
