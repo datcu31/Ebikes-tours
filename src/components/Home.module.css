@@ -7,27 +7,28 @@
 }
 
 .txt {
-  display: flex;
-  flex-direction: column;
   position: absolute;
-  top: 18%;
-  left: 10%;
-  animation: txt-appear 1s ease-out backwards;
+  text-align: center;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .txt h1 {
+  display: block;
   font-size: 1.6rem;
-  text-align: start;
+  font-weight: 400;
+  animation: moveInRight 1s ease-out;
 }
 
 .txt a {
-  text-align: center;
+  display: block;
   text-decoration: none;
   color: inherit;
-  font-weight: 600;
-  font-size: larger;
-  padding: 0;
-  animation: wiggle 500ms 3s 4 ease-out;
+  font-weight: 400;
+  font-size: 1.2rem;
+  letter-spacing: 2.5px;
+  animation: moveInLeft 1s ease-out, wiggle 500ms 2.3s 4 ease-out;
 }
 
 .txt a:hover {
@@ -37,16 +38,19 @@
 
 @media (min-width: 40rem) {
   .txt {
-    left: 20%;
+    top: 25%;
+    left: 30%;
+    transform: translate(-30%, -50%);
   }
 
   .txt h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: 300;
   }
 
   .txt a {
-    font-size: x-large;
-    align-self: center;
+    font-size: 2rem;
+    letter-spacing: 4px;
   }
 }
 
@@ -62,13 +66,33 @@
   }
 }
 
-@keyframes txt-appear {
-  from {
+@keyframes moveInLeft {
+  0% {
     opacity: 0;
-    transform: translateX(5rem);
+    transform: translateX(-100px);
   }
 
-  to {
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
     opacity: 1;
     transform: translateX(0);
   }
