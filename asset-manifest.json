@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Ebikes-tours/static/css/main.759c0c9e.css",
-    "main.js": "/Ebikes-tours/static/js/main.cb3f69e1.js",
+    "main.css": "/Ebikes-tours/static/css/main.530202cc.css",
+    "main.js": "/Ebikes-tours/static/js/main.a03f41ed.js",
     "static/media/Group.jpg": "/Ebikes-tours/static/media/Group.f4beefbb9d7a138fc2af.jpg",
     "index.html": "/Ebikes-tours/index.html",
-    "main.759c0c9e.css.map": "/Ebikes-tours/static/css/main.759c0c9e.css.map",
-    "main.cb3f69e1.js.map": "/Ebikes-tours/static/js/main.cb3f69e1.js.map"
+    "main.530202cc.css.map": "/Ebikes-tours/static/css/main.530202cc.css.map",
+    "main.a03f41ed.js.map": "/Ebikes-tours/static/js/main.a03f41ed.js.map"
   },
   "entrypoints": [
-    "static/css/main.759c0c9e.css",
-    "static/js/main.cb3f69e1.js"
+    "static/css/main.530202cc.css",
+    "static/js/main.a03f41ed.js"
   ]
 }
