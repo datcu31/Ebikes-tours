@@ -27,6 +27,7 @@ const EventsList = ({events}) => {
                             <div className={classes.pic}><img src={event.img} alt="img" /></div>
                             <div className={classes.content}>
                                 <h2>{event.title}</h2>
+                                <p>- Click to book -</p>
                                 <p>{event.description}</p>
                             </div>
                         </Link>

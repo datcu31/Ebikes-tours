@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom';
 import ContactPage from './pages/ContactPage';
 import DetailPage, { loader as eventDetailLoader } from './pages/DetailPage';
 import ErrorPage from './pages/ErrorPage';
@@ -11,6 +11,10 @@ import HomePage from './pages/HomePage';
 import AuthPage from './pages/AuthPage';
 
 const router = createBrowserRouter([
+  {
+    path: '/Ebikes-tours',
+    element: <Navigate to={'/'} />,
+  },
   {
     path: '/',
     element: <RootLayout />,
